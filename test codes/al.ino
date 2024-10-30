@@ -1,3 +1,7 @@
+// for testing
+// check the notes
+
+
 // Pin definitions
 const int leftSensorPin = 2;   // Left IR sensor pin
 const int rightSensorPin = 3;  // Right IR sensor pin
