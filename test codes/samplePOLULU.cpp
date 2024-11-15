@@ -1,7 +1,6 @@
 //POLULU -TEST
 
-// notes
-// Additional Notes
+// Notes
 
 // Calibration is critical: 
 // Without calibration, sensor values may not represent 
