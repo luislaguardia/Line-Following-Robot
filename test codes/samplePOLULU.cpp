@@ -7,7 +7,9 @@
 // Without calibration, sensor values may not represent 
 // the correct reflectance levels.
 
-// Custom tuning: Adjust thresholds in functions like readLine to suit your line-following application.
+// Custom tuning: 
+// Adjust thresholds in functions like readLine to suit 
+// your line-following application.
 
 
 #include <QTRSensors.h>
