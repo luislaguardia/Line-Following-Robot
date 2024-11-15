@@ -1,4 +1,4 @@
-//POLULU T-
+//POLULU -TEST
 
 #include <QTRSensors.h>
 
