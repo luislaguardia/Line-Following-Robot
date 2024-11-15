@@ -1,4 +1,6 @@
 /*
+
+POLULU QTR SENSOR
   QTRSensors.cpp - Arduino library for using Pololu QTR reflectance
     sensors and reflectance sensor arrays: QTR-1A, QTR-8A, QTR-1RC, and
     QTR-8RC.  The object used will determine the type of the sensor (either
