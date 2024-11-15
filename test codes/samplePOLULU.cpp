@@ -1,6 +1,14 @@
 //POLULU -TEST
 
 // notes
+// Additional Notes
+
+// Calibration is critical: 
+// Without calibration, sensor values may not represent 
+// the correct reflectance levels.
+
+// Custom tuning: Adjust thresholds in functions like readLine to suit your line-following application.
+
 
 #include <QTRSensors.h>
 
