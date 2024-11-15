@@ -1,3 +1,5 @@
+//POLULU T-
+
 #include <QTRSensors.h>
 
 QTRSensorsRC qtrrc((unsigned char[]) {2, 3, 4, 5, 6}, 5); // 5 sensors on pins 2-6
