@@ -1,3 +1,5 @@
+still developing -----
+
 # Line Following Robot
 
 This project is for a **Line Following Robot** controlled using two sensors to detect and follow a line. The robot uses two motors to move forward, left, or right, depending on the sensor input. If both sensors lose the line, the robot stops.
