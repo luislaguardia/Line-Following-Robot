@@ -1,4 +1,5 @@
 // example code for
+// 8 sensors
 
 #define IN1 12  // Motor 1 IN1
 #define IN2 14  // Motor 1 IN2
