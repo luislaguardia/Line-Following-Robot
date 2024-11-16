@@ -1,6 +1,7 @@
 SAMPLE CODE BELOW!
 
-Here's a quick checklist to ensure everything is functioning as expected:
+Checklist to ensure everything is functioning as expected:
+
 Hardware Setup:
 
 Motor Wiring to L298N:
@@ -21,10 +22,10 @@ The ESP32 is powered through the USB or from the battery, but make sure the volt
 a safe range for both the ESP32 (3.3V) and the L298N (typically 5V to 12V for the motors).
 
 Code Explanation:
-
 moveForward(): Both motors run in the forward direction.
 moveBackward(): Both motors run in reverse.
 stopMotors(): Stops both motors by setting the control pins to LOW.
+
 How to Verify If It's Working:
 When you upload the code to the ESP32, the motors should move forward for 2 seconds, then backward 
 for 2 seconds, and stop for 2 seconds. This cycle repeats continuously.
