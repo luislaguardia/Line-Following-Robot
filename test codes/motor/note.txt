@@ -1,0 +1,95 @@
+SAMPLE CODE BELOW!
+
+Here's a quick checklist to ensure everything is functioning as expected:
+Hardware Setup:
+
+Motor Wiring to L298N:
+OUT1 → Motor 1 +
+OUT2 → Motor 1 -
+OUT3 → Motor 2 +
+OUT4 → Motor 2 - 
+
+L298N to ESP32 GPIO:
+IN1 → GPIO 12
+IN2 → GPIO 14
+IN3 → GPIO 27
+IN4 → GPIO 26
+
+Power:
+Ensure the L298N is powered correctly: VCC to the battery (for the motors) and GND to GND. 
+The ESP32 is powered through the USB or from the battery, but make sure the voltage is within 
+a safe range for both the ESP32 (3.3V) and the L298N (typically 5V to 12V for the motors).
+
+Code Explanation:
+
+moveForward(): Both motors run in the forward direction.
+moveBackward(): Both motors run in reverse.
+stopMotors(): Stops both motors by setting the control pins to LOW.
+How to Verify If It's Working:
+When you upload the code to the ESP32, the motors should move forward for 2 seconds, then backward 
+for 2 seconds, and stop for 2 seconds. This cycle repeats continuously.
+
+Potential Issues:
+
+Power Supply:
+Ensure the Li-ion battery has enough charge. If the motors are not running or are very weak, 
+the battery might not be supplying enough power.
+Make sure the motor voltage and current requirements match what the L298N can supply.
+
+GPIO Pins:
+Double-check that the GPIO pins you are using on the ESP32 are correct and properly mapped in the code.
+If you're using different GPIO pins, modify the code to reflect the correct pin numbers.
+Motor Wiring:
+
+If the motors do not rotate, check the connections between the L298N and the motors. 
+Ensure that the motors are wired to the correct output pins (OUT1, OUT2, OUT3, OUT4).
+
+L298N Wiring:
+Ensure that ENA and ENB are properly connected to 5V (or through a jumper to the 5V line if required). 
+These pins are necessary to enable the motor drivers.
+
+Debugging:
+If you still encounter issues, here are some additional steps you can take:
+
+Test Motor Functionality Directly: Try manually powering the motors by connecting OUT1, OUT2, OUT3, 
+and OUT4 directly to the power supply to check if the motors are functioning.
+Use Serial Monitor for Debugging: Add Serial.begin(115200); in the setup() and Serial.println("Moving Forward"); 
+in the moveForward() function (and similarly for other motor commands). 
+
+
+
+// code
+
+void setup() {
+  // Set motor control pins as outputs
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+
+  // Start Serial Monitor for debugging
+  Serial.begin(115200);
+  Serial.println("Starting motor test...");
+
+  // Start with motors stopped
+  stopMotors();
+}
+
+void loop() {
+  // Test forward motion (both motors forward)
+  Serial.println("Moving Forward");
+  moveForward();
+  delay(2000);  // Move forward for 2 seconds
+
+  // Test backward motion (both motors backward)
+  Serial.println("Moving Backward");
+  moveBackward();
+  delay(2000);  // Move backward for 2 seconds
+
+  // Test stop (both motors stop)
+  Serial.println("Stopping Motors");
+  stopMotors();
+  delay(2000);  // Stop for 2 seconds
+
+  // Repeat the cycle
+}
