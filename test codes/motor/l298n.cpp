@@ -1,4 +1,5 @@
-// Motor pins connected to L298N
+// example code for
+
 #define IN1 12  // Motor 1 IN1
 #define IN2 14  // Motor 1 IN2
 #define IN3 27  // Motor 2 IN3
