@@ -590,3 +590,7 @@ QTRSensors::~QTRSensors()
     if(calibratedMinimumOff)
         free(calibratedMinimumOff);
 }
+
+
+// unedited version ..
+// date:
