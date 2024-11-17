@@ -37,8 +37,6 @@
 #include "QTRSensors.h"
 #include <Arduino.h>
 
-
-
 // Base class data member initialization (called by derived class init())
 void QTRSensors::init(unsigned char *pins, unsigned char numSensors,
   unsigned char emitterPin)
