@@ -1,3 +1,6 @@
+// for motor control 
+// lets keep moving
+
 const int motor1Pin1 = 3;
 const int motor1Pin2 = 4; 
 const int motor2Pin1 = 5; 
