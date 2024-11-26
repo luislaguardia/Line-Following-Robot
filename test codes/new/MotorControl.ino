@@ -1,5 +1,5 @@
 // for motor control 
-// lets keep moving
+// lets keep moving forward
 
 const int motor1Pin1 = 3;
 const int motor1Pin2 = 4; 
