@@ -1,4 +1,9 @@
 // POLULU QTR SENSOR
+// the code is part of the Pololu QTR Reflectance Sensor library for Arduino, which allows 
+// you to work with reflectance sensors like QTR-1A, QTR-8A, QTR-1RC, and QTR-8RC. It enables 
+// robots to follow lines, detect edges, or sense reflectance levels effectively.
+
+// ====================================================================
 
 /*
   QTRSensors.cpp - Arduino library for using Pololu QTR reflectance
